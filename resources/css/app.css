@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.logo {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.block-title{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+/*
+p {
+    font-size: 24px;
+    line-height: 40px;
+    padding-left: 20px;
+}*/
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
