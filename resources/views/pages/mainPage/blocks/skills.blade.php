@@ -1,4 +1,4 @@
-<section class="container mx-auto w-[1280px]">
+<section class="container mx-auto w-[1280px] mb-[120px]">
     <h2 class="block-title"># Мои навыки</h2>
     <div class="flex">
         <ul>
