@@ -13,6 +13,7 @@ module.exports = {
             },
             colors: {
                 'bg-main': "#FDFDFF",
+                'bg-card': '#FFFFFF',
             }
         },
     },

@@ -7,5 +7,6 @@
         @include('pages.mainPage.blocks.aboutMe')
         @include('pages.mainPage.blocks.skills')
         @include('pages.mainPage.blocks.workExperience')
+        @include('pages.mainPage.blocks.projects')
     </main>
 @endsection
