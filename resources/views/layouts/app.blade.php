@@ -14,5 +14,6 @@
 <body class="m-0 p-0 text-[24px] leading-[40px] bg-bg-main">
 @include('includes.header')
 @yield('main')
+@include('includes.footer')
 </body>
 </html>
