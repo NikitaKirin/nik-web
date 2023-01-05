@@ -1,7 +1,7 @@
-<section class="mb-[60px] sw:mb-[80px]">
+<section class="mb-[60px] sw:mb-[80px] xl:mb-[120px]">
     <h2 class="block-title font"># Мои навыки</h2>
     <div class="flex flex-col sm:flex-row sm:justify-between">
-        <ul>
+        <ul class="xl:pl-[25px]">
             <li>PHP 8.* : синтаксис, ООП</li>
             <li>Laravel 8.*</li>
             <li>SQL</li>
@@ -13,13 +13,13 @@
             <li>Git</li>
             <li>CI-CD: использование в учебных проектах</li>
         </ul>
-        <section class="w-full grid grid-cols-3 items-center gap-[30px] justify-items-center sm:grid-cols-2 sm:gap-[20px] sm:w-[40%]">
-            <img class="block w-[60px]" src="{{ asset("images/skills/icons/php-logo.svg") }}">
-            <img class="block w-[60px]" src="{{ asset("images/skills/icons/javascript-logo.svg") }}">
-            <img class="block w-[60px]" src="{{ asset("images/skills/icons/laravel-docker.svg") }}">
-            <img class="block w-[60px]" src="{{ asset("images/skills/icons/pgsql-logo.svg") }}">
-            <img class="block w-[60px]" src="{{ asset("images/skills/icons/icon-mysql.svg") }}">
-            <img class="block w-[60px]" src="{{ asset("images/skills/icons/docker-icon.svg") }}">
+        <section class="w-full grid grid-cols-3 items-center gap-[30px] justify-items-center sm:grid-cols-2 sm:gap-[20px] sm:w-[40%] xl:grid-cols-3">
+            <img class="block w-[60px] xl:w-[100px]" src="{{ asset("images/skills/icons/php-logo.svg") }}">
+            <img class="block w-[60px] xl:w-[100px]" src="{{ asset("images/skills/icons/javascript-logo.svg") }}">
+            <img class="block w-[60px] xl:w-[100px]" src="{{ asset("images/skills/icons/laravel-docker.svg") }}">
+            <img class="block w-[60px] xl:w-[100px]" src="{{ asset("images/skills/icons/pgsql-logo.svg") }}">
+            <img class="block w-[60px] xl:w-[100px]" src="{{ asset("images/skills/icons/icon-mysql.svg") }}">
+            <img class="block w-[60px] xl:w-[100px]" src="{{ asset("images/skills/icons/docker-icon.svg") }}">
         </section>
     </div>
 </section>

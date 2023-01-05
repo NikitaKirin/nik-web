@@ -11,7 +11,7 @@
     <title>@yield('title')</title>
     @vite('resources/css/app.css')
 </head>
-<body class="m-0 p-0 text-[16px] leading-[30px] bg-bg-main lg:text-[20px]">
+<body class="m-0 p-0 text-[16px] leading-[30px] bg-bg-main lg:text-[20px] xl:text-[24px] xl:leading-[40px]">
 @include('includes.header')
 @yield('main')
 @include('includes.footer')

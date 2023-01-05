@@ -96,3 +96,9 @@ ul {
         margin-bottom: 60px;
     }
 }
+
+@media (min-width: 1280px) {
+    .block-title {
+        font-size: 40px;
+    }
+}
