@@ -1,11 +1,11 @@
 <header class="mb-[60px] lg:px-[50px] lg:pt-[30px] lg:mb-[160px]">
     <div class="container max-w-7xl mx-auto">
-        <div class="border-b-2 py-[20px] px-[5px] bg-white z-10 flex items-center justify-between fixed w-full lg:pb-[30px] lg:mb-[90px]">
+        <div class="border-b-2 py-[20px] px-[5px] bg-white z-10 flex items-center justify-between fixed w-full sm:px-[25px] lg:pb-[30px] lg:mb-[90px]">
             <p class="logo text-[25px] text-center font-bold lg:text-[32px] lg:w-1/3">
                 <a href="#">&lt;nik-web&gt;</a>
             </p>
             <div class="flex justify-end">
-                <nav class="menu-nav p-0 text-[18px] list-none mr-[5px] lg:text-[18px] lg:uppercase lg:justify-between lg:w-2/3">
+                <nav class="menu-nav p-0 text-[18px] list-none mr-[5px] min-[425px]:mr-[35px] lg:text-[18px] lg:uppercase lg:justify-between lg:w-2/3">
                     <li class="hover:opacity-50 active:opacity-50"><a href="#">Обо мне</a></li>
                     <li class="hover:opacity-50 active:opacity-50">Мои навыки</li>
                     <li class="hover:opacity-50 active:opacity-50">Проекты</li>

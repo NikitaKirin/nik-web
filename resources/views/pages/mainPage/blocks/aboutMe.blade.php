@@ -1,6 +1,6 @@
-<section class="mb-[60px]">
+<section class="mb-[60px] sm:mb-[80px]">
     <h2 class="block-title"># Обо мне</h2>
-    <div class="flex flex-col gap-[25px]">
+    <div class="flex flex-col gap-[25px] items-center">
         <p class="w-full text-justify">Всем привет! Меня зовут Никита. Я заканчиваю 4 курс Уральского федерального университета по
             направлению
             “Прикладная информатика”. Люблю интересные и сложные задачи. Стремлюсь к развитию и совершенству в области

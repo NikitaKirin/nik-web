@@ -1,6 +1,6 @@
-<section class="mb-[60px]">
+<section class="mb-[60px] sm:mb-[80px]">
     <h2 class="block-title"># Контакты</h2>
-    <div class="lg:pl-[20px]">
+    <div class="lg:pl-[20px] sm:w-[50%]">
         <div class="mb-[40px]">
             <p class="mb-[25px]"><a style="background-image: url({{ asset('images/icons/phone.svg') }})"
                                     class="bg-no-repeat bg-left-center bg-contain pl-[30px] lg:pl-[40px]"
