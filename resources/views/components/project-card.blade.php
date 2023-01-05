@@ -13,3 +13,21 @@
         </div>
     </div>
 </div>
+
+<div class="pop-up" id="pop-up-first">
+    <div class="pop-up-container">
+        <div class="pop-up-body">
+            <img src="{{ asset('images/youngeek-card.jpg') }}" class="block mx-auto w-[500px] mb-[15px]">
+            <h4 class="text-[30px] font-semibold">Youngeek</h4>
+            <div class="text-[16px]">
+                <p>Проект представляет собой образовательную платформу, в которой реализуется несколько ролей
+                    пользователей.
+                    Основной функционал платформы заключается в том, что пользователь с ролью владелец курса сможет с
+                    помощью системой загружать отдельные фрагменты неких уроков и заданий в определенной предметной
+                    области
+                    в виде фрагментов медиадокументов, и потом собирать их в урок с помощью пошагового конструктора.</p>
+            </div>
+            <div class="absolute top-[15px] right-[15px] text-[30px] cursor-pointer" id="close-first">&#10006;</div>
+        </div>
+    </div>
+</div>

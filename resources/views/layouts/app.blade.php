@@ -16,5 +16,6 @@
 @yield('main')
 @include('includes.footer')
 @vite('resources/js/mainPage/menuButton.js')
+@vite('resources/js/mainPage/popUp.js')
 </body>
 </html>
