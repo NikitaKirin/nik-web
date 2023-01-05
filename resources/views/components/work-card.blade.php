@@ -4,8 +4,8 @@
         <h4 class="text-[18px] font-regular">Уральский федеральный университет имени первого президента России Б. Н.
             Ельцина</h4>
     </div>
-    <div class="flex flex-col gap-[10px]">
-        <h3 class="text-[18px] font-semibold border-l-2 pl-[10px] lg:border-r-2 lg:mr-[30px]">Ответственный за техническое сопровождение сайтов институтов: ИРИТ-РТФ и
+    <div class="flex flex-col gap-[10px] lg:flex-row">
+        <h3 class="text-[18px] font-semibold border-l-2 pl-[10px] lg:border-r-2 lg:mr-[30px] lg:border-l-0 lg:text-[24px]">Ответственный за техническое сопровождение сайтов институтов: ИРИТ-РТФ и
             ИнФО</h3>
         <p class="lg:text-[20px]">Актуализация и публикация новой информации на сайтах на базе CMS-системы typo3 с
             применением HTML, CSS и JS</p>

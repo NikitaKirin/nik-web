@@ -89,3 +89,10 @@ ul {
 .menu-button-active span:after {
     transform: rotate(-45deg);
 }
+
+@media (min-width: 1024px) {
+    .block-title {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+}

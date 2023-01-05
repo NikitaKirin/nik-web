@@ -5,6 +5,6 @@
             направлению
             “Прикладная информатика”. Люблю интересные и сложные задачи. Стремлюсь к развитию и совершенству в области
             web. В свободное время люблю заниматься спортом – хожу в спортзал.</p>
-        <img src="{{ asset('images/about-me-image.jpg') }}" alt="Фото блока 'Обо мне'" class="block w-full sm:w-[300px]">
+        <img src="{{ asset('images/about-me-image.jpg') }}" alt="Фото блока 'Обо мне'" class="block w-full sm:w-[300px] lg:w-[440px]">
     </div>
 </section>
