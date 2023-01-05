@@ -1,6 +1,6 @@
 <header class="mb-[60px] lg:px-[50px] lg:pt-[30px] lg:mb-[160px]">
     <div class="container max-w-7xl mx-auto">
-        <div class="border-b-2 py-[20px] px-[5px] bg-white z-10 flex items-center justify-between fixed w-full sm:px-[25px] lg:pb-[30px] lg:mb-[90px]">
+        <div class="border-b-2 py-[20px] px-[5px] bg-white z-10 flex items-center justify-between fixed top-0 w-full sm:px-[25px] lg:pb-[30px] lg:mb-[90px]">
             <p class="logo text-[25px] text-center font-bold lg:text-[32px] lg:w-1/3">
                 <a href="#">&lt;nik-web&gt;</a>
             </p>
@@ -17,8 +17,8 @@
                 </a>
             </div>
         </div>
-        <div class="flex items-center justify-between flex-col gap-[35px] mb-[60px]">
-            <img src="{{ asset('images/promo-image.jpg') }}" alt="Промо изображение" class="block w-[100%] mt-[130px]">
+        <div class="flex items-center justify-between flex-col gap-[35px] mb-[60px] mt-[130px] sm:flex-row sm:px-[25px] sm:mt-[150px]">
+            <img src="{{ asset('images/promo-image.jpg') }}" alt="Промо изображение" class="block w-[100%] sm:w-[350px]">
             <h1 class="text-[30px] uppercase font-bold leading-[40px] text-center">Кирин Никита <br> Junior
                 php-developer</h1>
         </div>
