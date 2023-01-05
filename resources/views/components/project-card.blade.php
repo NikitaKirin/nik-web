@@ -1,4 +1,4 @@
-<div class="w-[380px] bg-bg-card p-[15px] shadow-lg hover:shadow-2xl">
+<div class="w-full lg:w-[380px] bg-bg-card p-[15px] shadow-lg hover:shadow-2xl">
     <div>
         <img src="{{ asset("images/youngeek-card.jpg") }}" width="350" height="180" class="block mb-[15px]">
         <h4 class="text-[20px] font-[600] mb-[15px]">Youngeek</h4>

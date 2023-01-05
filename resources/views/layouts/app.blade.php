@@ -11,9 +11,10 @@
     <title>@yield('title')</title>
     @vite('resources/css/app.css')
 </head>
-<body class="m-0 p-0 text-[24px] leading-[40px] bg-bg-main">
+<body class="m-0 p-0 text-[16px] leading-[30px] bg-bg-main">
 @include('includes.header')
 @yield('main')
 @include('includes.footer')
+@vite('resources/js/mainPage/menuButton.js')
 </body>
 </html>
