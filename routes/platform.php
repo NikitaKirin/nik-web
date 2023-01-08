@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Models\Project;
+use App\Models\WorkExperience;
 use App\Orchid\Screens\Examples\ExampleCardsScreen;
 use App\Orchid\Screens\Examples\ExampleChartsScreen;
 use App\Orchid\Screens\Examples\ExampleFieldsAdvancedScreen;
@@ -18,6 +19,8 @@ use App\Orchid\Screens\Role\RoleListScreen;
 use App\Orchid\Screens\User\UserEditScreen;
 use App\Orchid\Screens\User\UserListScreen;
 use App\Orchid\Screens\User\UserProfileScreen;
+use App\Orchid\Screens\WorkExperience\WorkExperienceEditScreen;
+use App\Orchid\Screens\WorkExperience\WorkExperienceListScreen;
 use Illuminate\Support\Facades\Route;
 use Tabuna\Breadcrumbs\Trail;
 
@@ -106,6 +109,29 @@ Route::screen('projects/{project}/edit', ProjectEditScreen::class)
         return $trail
             ->parent('platform.projects')
             ->push(__("Изменить проект: $project->title"), route('platform.projects.edit', $project));
+    });
+
+// Platform > WorkExperiences
+Route::screen('workExperiences', WorkExperienceListScreen::class)
+    ->name('platform.workExperiences')
+    ->breadcrumbs(fn(Trail $trail) => $trail
+        ->parent('platform.index')
+        ->push(__('Опыт работы'), \route('platform.workExperiences')));
+
+// Platform > WorkExperiences > Create
+Route::screen('workExperiences/create', WorkExperienceEditScreen::class)
+    ->name('platform.workExperiences.create')
+    ->breadcrumbs(fn(Trail $trail) => $trail
+        ->parent('platform.workExperiences')
+        ->push(__('Добавить опыт работы'), \route('platform.workExperiences.create')));
+
+// Platform > WorkExperiences > Edit
+Route::screen('workExperiences/{workExperience}/edit', WorkExperienceEditScreen::class)
+    ->name('platform.workExperiences.edit')
+    ->breadcrumbs(function (Trail $trail, WorkExperience $workExperience) {
+        return $trail
+            ->parent('platform.workExperiences')
+            ->push(__("Изменить опыт работы"), route('platform.workExperiences.edit', $workExperience));
     });
 
 // Example...
