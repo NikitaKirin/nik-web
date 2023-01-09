@@ -26,6 +26,10 @@ class WorkExperience extends Model
 
     public function setEndDateAttribute($value)
     {
-        $this->attributes['end_date'] = Carbon::make($value)->toDate();
+        if (is_null($value)) {
+            $this->attributes['end_date'] = $value;
+        } else {
+            $this->attributes['end_date'] = Carbon::make($value)->toDate();
+        }
     }
 }
