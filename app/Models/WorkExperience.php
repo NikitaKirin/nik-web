@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 use Orchid\Screen\AsSource;
 
 class WorkExperience extends Model
@@ -31,5 +32,24 @@ class WorkExperience extends Model
         } else {
             $this->attributes['end_date'] = Carbon::make($value)->toDate();
         }
+    }
+
+    public function getStartDateAttribute()
+    {
+        return Str::ucfirst(
+            Carbon::make($this->attributes['start_date'])->monthName.' '.Carbon::make(
+                $this->attributes['start_date']
+            )->year
+        );
+    }
+
+    public function getEndDateAttribute()
+    {
+        if (is_null($this->attributes['end_date'])) {
+            return 'по настоящее время';
+        }
+        return Carbon::make($this->attributes['end_date'])->monthName.' '.Carbon::make(
+                $this->attributes['end_date']
+            )->year;
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\WorkExperience;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.mainPage.main');
+    $workExperiences = WorkExperience::all();
+    return view('pages.mainPage.main', ['workExperiences' => $workExperiences]);
 });
