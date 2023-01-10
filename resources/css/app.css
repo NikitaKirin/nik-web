@@ -107,14 +107,14 @@ ul {
     height: 100%;
 }
 
-.pop-up-body {
-    margin: auto;
-    width: 900px;
-    background-color: white;
-    position: relative;
-    min-height: 500px;
-    border-radius: 10px;
-    padding: 50px 25px;
+.pop-up-body h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pop-up-body a {
+    color: #3983f8 !important;
 }
 
 .pop-up-active {
@@ -125,6 +125,10 @@ ul {
     .block-title {
         font-size: 30px;
         margin-bottom: 60px;
+    }
+
+    .pop-up-body h2 {
+        font-size: 22px;
     }
 }
 

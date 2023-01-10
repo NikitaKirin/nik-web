@@ -2,10 +2,12 @@
 
 namespace App\Orchid\Layouts\Project;
 
+use App\Models\Tag;
 use Orchid\Screen\Field;
 use Orchid\Screen\Fields\Input;
 use Orchid\Screen\Fields\Picture;
 use Orchid\Screen\Fields\Quill;
+use Orchid\Screen\Fields\Relation;
 use Orchid\Screen\Layouts\Rows;
 
 class ProjectEditLayout extends Rows
@@ -62,7 +64,11 @@ class ProjectEditLayout extends Rows
                 ->type('url')
                 ->value($this->query->get('project.code_link')),
 
-
+            Relation::make('tags.')
+                ->title(__('Теги'))
+                ->fromModel(Tag::class, 'value')
+                ->multiple()
+                ->value($this->query->get('project')->tags),
             Picture::make('fon_id')
                 ->title(__('Обложка'))
                 ->required()

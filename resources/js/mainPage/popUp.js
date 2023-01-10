@@ -1,5 +1,4 @@
 const buttonsOfPopUps = Array.from(document.getElementsByClassName('button-pop-up'));
-
 buttonsOfPopUps.forEach((button) => {
     button.onclick = (e) => {
         e.preventDefault();
@@ -13,3 +12,4 @@ buttonsOfPopUps.forEach((button) => {
         }
     }
 })
+

@@ -70,7 +70,7 @@ class ProjectEditScreen extends Screen
     public function save(Project $project, ProjectCreateOrEditRequest $request)
     {
         $project->fill($request->validated())->save();
-
+        $project->tags()->sync($request->input('tags', []));
         if ($request->input('fon_id')) {
             $project->attachment()->syncWithoutDetaching(
                 $request->input('fon_id', []),
