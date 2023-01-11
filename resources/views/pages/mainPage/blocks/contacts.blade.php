@@ -17,7 +17,7 @@
             <a href="https://t.me/nikitakirin" class="hover:scale-110" target="_blank">
                 <img class="block w-[50px]" src="{{ asset('images/icons/socialNetworks/telegram-icon.svg') }}">
             </a>
-            <a href="#" class="hover:scale-110" target="_blank">
+            <a href="https://vk.com/nikita_kirin" class="hover:scale-110" target="_blank">
                 <img class="block w-[50px]" src="{{ asset('images/icons/socialNetworks/vk-icon.svg') }}">
             </a>
             <a href="https://api.whatsapp.com/send?phone=79822989712" class="hover:scale-110" target="_blank">
