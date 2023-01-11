@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', __('Main page'))
+@section('title', __('Кирин Никита – Junior PHP-Developer'))
 
 @section('main')
     <main class="px-[15px] container max-w-7xl mx-auto sm:px-[25px] min-[1310px]:px-0">
