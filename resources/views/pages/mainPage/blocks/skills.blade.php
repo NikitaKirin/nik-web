@@ -1,4 +1,4 @@
-<section class="mb-[60px] sw:mb-[80px] xl:mb-[120px]">
+<section class="mb-[60px] sw:mb-[80px] xl:mb-[120px]" id="skills">
     <h2 class="block-title font"># Мои навыки</h2>
     <div class="flex flex-col sm:flex-row sm:justify-between">
         <ul class="xl:pl-[25px]">
@@ -13,7 +13,8 @@
             <li>Git</li>
             <li>CI-CD: использование в учебных проектах</li>
         </ul>
-        <section class="w-full grid grid-cols-3 items-center gap-[30px] justify-items-center sm:grid-cols-2 sm:gap-[20px] sm:w-[40%] xl:grid-cols-3">
+        <section
+                class="w-full grid grid-cols-3 items-center gap-[30px] justify-items-center sm:grid-cols-2 sm:gap-[20px] sm:w-[40%] xl:grid-cols-3">
             <img class="block w-[60px] xl:w-[100px]" src="{{ asset("images/skills/icons/php-logo.svg") }}">
             <img class="block w-[60px] xl:w-[100px]" src="{{ asset("images/skills/icons/javascript-logo.svg") }}">
             <img class="block w-[60px] xl:w-[100px]" src="{{ asset("images/skills/icons/laravel-docker.svg") }}">
