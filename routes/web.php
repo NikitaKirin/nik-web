@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $workExperiences = WorkExperience::all();
+    $workExperiences = WorkExperience::where('hidden', false)->get();
     $projects = Project::all();
     return view('pages.mainPage.main', ['workExperiences' => $workExperiences, 'projects' => $projects]);
 });
