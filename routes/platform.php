@@ -16,6 +16,7 @@ use App\Orchid\Screens\Project\ProjectEditScreen;
 use App\Orchid\Screens\Project\ProjectListScreen;
 use App\Orchid\Screens\Role\RoleEditScreen;
 use App\Orchid\Screens\Role\RoleListScreen;
+use App\Orchid\Screens\TelescopeViewScreen;
 use App\Orchid\Screens\User\UserEditScreen;
 use App\Orchid\Screens\User\UserListScreen;
 use App\Orchid\Screens\User\UserProfileScreen;
@@ -133,6 +134,9 @@ Route::screen('workExperiences/{workExperience}/edit', WorkExperienceEditScreen:
             ->parent('platform.workExperiences')
             ->push(__("Изменить опыт работы"), route('platform.workExperiences.edit', $workExperience));
     });
+
+Route::screen('/telescope', TelescopeViewScreen::class)
+    ->name('telescope.index');
 
 // Example...
 Route::screen('example', ExampleScreen::class)

@@ -95,6 +95,11 @@ class PlatformProvider extends OrchidServiceProvider
                 ->icon('lock')
                 ->route('platform.systems.roles')
                 ->permission('platform.systems.roles'),
+
+            Menu::make(__('Панель разработчика'))
+                ->url(route('telescope.index'))
+                ->icon('monitor')
+                ->title(__('Разработчикам')),
         ];
     }
 
