@@ -10,6 +10,15 @@ buttonsOfPopUps.forEach((button) => {
             e.preventDefault();
             popUp.classList.remove('pop-up-active');
         }
+
+        const popUpContainer = document.querySelector('.pop-up');
+        popUpContainer.onclick = (e) => {
+            e.preventDefault();
+            console.log(e.target);
+            if (e.target.classList.contains('pop-up-container')) {
+                popUp.classList.remove('pop-up-active');
+            }
+        }
     }
 })
 
