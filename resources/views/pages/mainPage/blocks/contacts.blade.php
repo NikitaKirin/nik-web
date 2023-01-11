@@ -11,16 +11,16 @@
             </p>
         </div>
         <div class="flex justify-between w-full flex-wrap lg:w-[350px]">
-            <a href="#" class="hover:scale-110">
+            <a href="https://github.com/NikitaKirin" target="_blank" class="hover:scale-110">
                 <img class="block w-[50px]" src="{{ asset('images/icons/socialNetworks/github-icon.svg') }}">
             </a>
-            <a href="#" class="hover:scale-110">
+            <a href="https://t.me/nikitakirin" class="hover:scale-110" target="_blank">
                 <img class="block w-[50px]" src="{{ asset('images/icons/socialNetworks/telegram-icon.svg') }}">
             </a>
-            <a href="#" class="hover:scale-110">
+            <a href="#" class="hover:scale-110" target="_blank">
                 <img class="block w-[50px]" src="{{ asset('images/icons/socialNetworks/vk-icon.svg') }}">
             </a>
-            <a href="#" class="hover:scale-110">
+            <a href="https://api.whatsapp.com/send?phone=79822989712" class="hover:scale-110" target="_blank">
                 <img class="block w-[50px]" src="{{ asset('images/icons/socialNetworks/whatsapp-icon.svg') }}">
             </a>
         </div>
