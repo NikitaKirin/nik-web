@@ -27,14 +27,14 @@ class WorkExperienceEditLayout extends Rows
             Input::make('start_date')
                 ->type('month')
                 ->title(__('Дата начала'))
-                ->value($this->query->get('workExperience.start_date'))
+                ->value(dateToDateFormat($this->query->get('workExperience.start_date'), 'Y-m'))
                 ->horizontal()
                 ->required(),
 
             Input::make('end_date')
                 ->type('month')
                 ->title(__('Дата окончания'))
-                ->value($this->query->get('workExperience.end_date'))
+                ->value(dateToDateFormat($this->query->get('workExperience.end_date'), 'Y-m'))
                 ->horizontal(),
 
             Input::make('company_name')
