@@ -5,7 +5,7 @@
                 <a href="/">&lt;nik-web&gt;</a>
             </p>
             <div class="flex justify-end lg:justify-between lg:block lg:w-2/3">
-                <nav class="menu-nav p-0 text-[18px] list-none mr-[5px] uppercase min-[425px]:mr-[35px] lg:text-[18px] lg:flex lg:justify-between lg:opacity-100 lg:h-full lg:transform-none lg:mr-0">
+                <nav class="menu-nav p-0 text-[16px] list-none mr-[5px] uppercase min-[425px]:mr-[35px] lg:text-[18px] lg:flex lg:justify-between lg:opacity-100 lg:h-full lg:transform-none lg:mr-0">
                     <li class="hover:opacity-50 active:opacity-50"><a href="#aboutMe">Обо мне</a></li>
                     <li class="hover:opacity-50 active:opacity-50"><a href="#skills">Мои навыки</a></li>
                     <li class="hover:opacity-50 active:opacity-50"><a href="#works">Опыт работы</a></li>
