@@ -10,12 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
     <title>@yield('title')</title>
     @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
 </head>
 <body class="m-0 p-0 text-[16px] leading-[30px] bg-bg-main lg:text-[20px] xl:text-[24px] xl:leading-[40px]">
 @include('includes.header')
 @yield('main')
 @include('includes.footer')
-@vite('resources/js/mainPage/menuButton.js')
-@vite('resources/js/mainPage/popUp.js')
 </body>
 </html>
