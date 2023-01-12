@@ -72,7 +72,7 @@ class ProjectEditScreen extends Screen
         $project->fill($request->validated())->save();
         $project->tags()->sync($request->input('tags', []));
         if ($request->input('fon_id')) {
-            $project->attachment()->syncWithoutDetaching(
+            $project->attachment()->sync(
                 $request->input('fon_id', []),
             );
             $project->fon_id = $project->attachment()->first()?->id;
