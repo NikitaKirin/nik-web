@@ -14,10 +14,10 @@ git pull origin production
 ~/nik-web.ru/bin/composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
 
 # Install npm modules
-/home/c69359/.nvm/versions/node/v19.4.0/bin/npm install
+npm install
 
 # Build front-end
-/home/c69359/.nvm/versions/node/v19.4.0/bin/npm run build
+npm run build
 
 # Run migration
 php artisan migrate --force
