@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Orchid\Screens;
 
+use Illuminate\Support\Facades\Auth;
 use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Screen;
 use Orchid\Support\Facades\Layout;
@@ -27,7 +28,7 @@ class PlatformScreen extends Screen
      */
     public function name(): ?string
     {
-        return 'Get Started';
+        return __("Nik-web Admin");
     }
 
     /**
@@ -37,7 +38,8 @@ class PlatformScreen extends Screen
      */
     public function description(): ?string
     {
-        return 'Welcome to your Orchid application.';
+        $name = Auth::user()->name;
+        return __("Добро пожаловать, $name");
     }
 
     /**
@@ -49,16 +51,18 @@ class PlatformScreen extends Screen
     {
         return [
             Link::make('Website')
-                ->href('http://orchid.software')
+                ->href('https://nik-web.ru')
+                ->target('_blank')
                 ->icon('globe-alt'),
 
-            Link::make('Documentation')
-                ->href('https://orchid.software/en/docs')
+            Link::make('Yandex Metrika')
+                ->href('https://metrika.yandex.ru/dashboard?id=92021760')
+                ->target('_blank')
                 ->icon('docs'),
 
-            Link::make('GitHub')
+            /*Link::make('GitHub')
                 ->href('https://github.com/orchidsoftware/platform')
-                ->icon('social-github'),
+                ->icon('social-github'),*/
         ];
     }
 
@@ -70,7 +74,8 @@ class PlatformScreen extends Screen
     public function layout(): iterable
     {
         return [
-            Layout::view('platform::partials.welcome'),
+//            Layout::browsing('https://nik-web.ru')
+//            ->height('1000px'),
         ];
     }
 }
