@@ -1,6 +1,6 @@
 <div class="w-full bg-bg-card p-[15px] shadow-lg hover:shadow-2xl sm:w-[48%] lg:w-[380px]">
-    <div>
-        <img src="{{ $project->fon->url() }}" width="350" height="180" class="block mb-[15px]">
+    <div class="flex flex-col h-[100%]">
+        <img src="{{ $project->fon->url() }}" width="350" class="block mb-[15px]">
         <h4 class="text-[20px] font-[600] mb-[15px]">{{ $project->title }}</h4>
         <div class="text-[16px] leading-[21px] mb-[15px]">
             <p class="mb-[10px]">{{ $project->annotation }}</p>
@@ -11,7 +11,7 @@
                 @endforeach
             @endif
         </div>
-        <div class="flex justify-between">
+        <div class="flex justify-between mt-auto">
             <x-button class="button-pop-up bg-[#3884F8]" id="{{$loop->index}}">Подробнее</x-button>
             @if($project->demo_link)
                 <x-button class="bg-black bg-[#BA38F8]" href="{{ $project->demo_link }}" target="_blank">Демо</x-button>
