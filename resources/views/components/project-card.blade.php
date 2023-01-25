@@ -1,7 +1,7 @@
 <div class="w-full bg-bg-card p-[15px] shadow-lg hover:shadow-2xl sm:w-[48%] lg:w-[380px]">
     <div class="flex flex-col h-[100%]">
         <img src="{{ $project->fon->url() }}" width="350" class="block mb-[15px]">
-        <h4 class="text-[20px] font-[600] mb-[15px]">{{ $project->title }}</h4>
+        <h4 class="text-[20px] font-[600] mb-[15px] leading-[25px]">{{ $project->title }}</h4>
         <div class="text-[16px] leading-[21px] mb-[15px]">
             <p class="mb-[10px]">{{ $project->annotation }}</p>
             <p class="mb-[10px]"><b>Стек технологий: </b>{{ $project->technologies }}</p>
