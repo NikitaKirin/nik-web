@@ -12,7 +12,8 @@ export const popUp = () => {
                 popUp.classList.remove('pop-up-active');
             }
 
-            const popUpContainer = document.querySelector('.pop-up');
+            const popUpContainer = popUp.querySelector('.pop-up-container');
+            console.log(popUpContainer);
             popUpContainer.onclick = (e) => {
                 e.preventDefault();
                 if (e.target.classList.contains('pop-up-container')) {
